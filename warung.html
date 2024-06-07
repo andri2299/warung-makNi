@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Warung Mak Ni - Cita Rasa Tradisional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+          },
+          colors: {
+            primary: '#FF6B35',
+            secondary: '#004E89',
+            accent: '#00A5CF',
+            neutral: '#F0F3F5',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans bg-neutral">
+  <div class="container mx-auto px-4 my-8">
+    <!--Header & Navigation-->
+    <header class="bg-white shadow-lg rounded-2xl p-6 mb-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <h1 class="text-4xl font-bold text-primary">Warung Mak Ni<span class="text-secondary">.</span></h1>
+        <nav class="mt-4 md:mt-0">
+          <ul class="flex space-x-6">
+            <li><a href="#collections" class="text-gray-700 hover:text-primary font-medium transition">Menu</a></li>
+            <li><a href="#tentang" class="text-gray-700 hover:text-primary font-medium transition">Tentang</a></li>
+            <li><a href="#order" class="text-gray-700 hover:text-primary font-medium transition">Cara Order</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--Banner-->
+    <div class="mb-12">
+      <img src="images/bannerwr.png" class="w-full h-auto rounded-3xl shadow-xl object-cover"
+        alt="Banner Masakan Indonesia" />
+    </div>
+
+    <!--Menu Section-->
+    <section id="collections" class="mb-16">
+      <h3 class="text-3xl font-bold text-center text-secondary mb-4">Menu Pilihan Kami</h3>
+      <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">Silahkan pilih menu dari beragam hidangan lezat yang
+        kami sediakan. Temukan favorit Anda di sini dan cicipi menu spesial kami. Selera Anda adalah prioritas kami, dan
+        kami telah menyiapkan berbagai pilihan untuk memuaskan keinginan Anda.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/yam.webp" class="w-full h-64 object-cover" alt="Ayam Bakar">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Ayam Bakar Madu</h4>
+            <p class="text-gray-600 text-sm mb-4">Ayam direndam dalam campuran madu, kecap, dan rempah, lalu dibakar
+              hingga kecokelatan. Manis, gurih, dan menggoda.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition order-btn"
+                data-menu="Ayam Bakar Madu" data-price="22000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 22.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/ikan.webp" class="w-full h-64 object-cover" alt="Ikan Goreng">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Ikan Goreng Crispy</h4>
+            <p class="text-gray-600 text-sm mb-4">Ikan segar dibalut tepung bumbu khas, digoreng hingga garing di luar,
+              namun tetap lembut di dalam.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-accent text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition order-btn"
+                data-menu="Ikan Goreng Crispy" data-price="20000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 20.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/nasgor.jpg" class="w-full h-64 object-cover" alt="Nasi Goreng">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Nasi Goreng Kampung</h4>
+            <p class="text-gray-600 text-sm mb-4">Nasi goreng autentik dengan kecap manis, telur, dan bumbu rahasia.
+              Disajikan dengan kerupuk dan acar.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition order-btn"
+                data-menu="Nasi Goreng Kampung" data-price="18000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 18.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/nasud.jpg" class="w-full h-64 object-cover" alt="Nasi Uduk">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Nasi Uduk Komplit</h4>
+            <p class="text-gray-600 text-sm mb-4">Nasi uduk dengan aroma pandan dan serai, disajikan dengan ayam goreng,
+              telur dadar, tempe orek, dan sambal.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-accent text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition order-btn"
+                data-menu="Nasi Uduk Komplit" data-price="20000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 20.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/gado2.jpg" class="w-full h-64 object-cover" alt="Gado-gado">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Gado-Gado Spesial</h4>
+            <p class="text-gray-600 text-sm mb-4">Gado-gado dengan campuran sayuran segar, tahu, tempe, telur, disiram
+              saus kacang kental buatan sendiri.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-primary text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition order-btn"
+                data-menu="Gado-Gado Spesial" data-price="15000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 15.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
+          <img src="images/gor.jpg" class="w-full h-64 object-cover" alt="Gorengan">
+          <div class="p-6">
+            <h4 class="text-xl font-semibold text-secondary mb-2">Paket Gorengan</h4>
+            <p class="text-gray-600 text-sm mb-4">Aneka gorengan renyah: bakwan jagung, tahu isi, pisang goreng, dan
+              tempe mendoan.</p>
+            <div class="flex justify-between items-center">
+              <button
+                class="bg-accent text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-accent/90 transition order-btn"
+                data-menu="Paket Gorengan (6 pcs)" data-price="10000">Order via WA</button>
+              <span class="text-secondary font-bold text-lg">Rp. 10.000</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Tentang Kami-->
+    <section id="tentang" class="bg-secondary text-white px-8 py-16 rounded-3xl mb-16 relative overflow-hidden">
+      <img src="images/about-us.png" alt="Mak Ni" class="absolute right-0 bottom-0 h-64 opacity-20">
+      <div class="max-w-3xl relative z-10">
+        <h3 class="text-3xl font-bold mb-6">Cerita di Balik Rasa</h3>
+        <p class="mb-4">Selamat datang di Warung Mak Ni, tempat di mana resep turun-temurun bertemu dengan bahan-bahan
+          segar terbaik. Berlokasi di selatan Masjid Al-Ikhlas Pasar Gondang, warung kami telah menjadi bagian dari
+          komunitas selama dekade.</p>
+        <p class="mb-4">Setiap hidangan kami adalah wujud cinta Mak Ni pada masakan tradisional. Dengan pengalaman
+          puluhan tahun, beliau memastikan setiap suap membawa Anda kembali ke masa kecil, saat menikmati masakan nenek
+          di kampung.</p>
+        <p>Temukan kembali cita rasa otentik Indonesia dalam:</p>
+        <ul class="grid grid-cols-2 gap-2 text-lg mt-4">
+          <li class="flex items-center"><span class="text-accent mr-2">🍚</span> Nasi Goreng</li>
+          <li class="flex items-center"><span class="text-accent mr-2">🍗</span> Ayam Bakar</li>
+          <li class="flex items-center"><span class="text-accent mr-2">🥘</span> Nasi Uduk</li>
+          <li class="flex items-center"><span class="text-accent mr-2">🥗</span> Gado-gado</li>
+          <li class="flex items-center"><span class="text-accent mr-2">🐟</span> Ikan Goreng</li>
+          <li class="flex items-center"><span class="text-accent mr-2">🍤</span> Gorengan</li>
+        </ul>
+      </div>
+  </div>
+  </div>
+  </section>
+
+  <!--Cara Order-->
+  <section id="order" class="bg-white shadow-lg rounded-3xl p-8 mb-16">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 order-2 md:order-1">
+        <h3 class="text-3xl font-bold text-secondary mb-6">4 Langkah Mudah Pesan</h3>
+        <ol class="space-y-6 text-lg text-gray-700 list-decimal list-inside">
+          <li>
+            <span class="font-medium text-primary block mb-2 text-xl">Pilih Menu Favoritmu</span>
+            <p>Telusuri beragam hidangan lezat kami dan temukan yang paling menggugah selera.</p>
+          </li>
+          <li>
+            <span class="font-medium text-primary block mb-2 text-xl">Klik "Order via WA"</span>
+            <p>Langsung terhubung dengan kami melalui WhatsApp untuk kemudahan pemesanan.</p>
+          </li>
+          <li>
+            <span class="font-medium text-primary block mb-2 text-xl">Konfirmasi & Bayar</span>
+            <p>Pastikan pesanan Anda dan pilih metode pembayaran yang nyaman.</p>
+          </li>
+          <li>
+            <span class="font-medium text-primary block mb-2 text-xl">Nikmati Sajian Kami</span>
+            <p>Duduk, santai, dan nikmati hidangan lezat dari Warung Mak Ni.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="md:w-1/2 order-1 md:order-2 flex justify-center mb-8 md:mb-0">
+        <img src="images/order.png" alt="Order Online"
+          class="w-full max-w-md transform hover:rotate-6 transition duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!--Footer-->
+  <footer class="text-center p-6 bg-gradient-to-r from-secondary to-primary text-white rounded-full shadow-lg">
+    <p>&copy; 2023 Warung Mak Ni - Melestarikan Cita Rasa Nusantara, Satu Hidangan pada Satu Waktu</p>
+  </footer>
+  </div>
+
+
+<script src="./Javascript/javascript.js"></script>
+</body>
+
+</html>
